@@ -79,4 +79,13 @@ public extension Color {
   static var pastelYellow: Color { Color(hex: "FFED9E") }
   static var yellowOrange: Color { Color(hex: "F2AC42") }
   static var lightCarminePink: Color { Color(hex: "E16071") }
+  
+  // MARK: - Blue Beach
+  private var _BlueBeach: [UIColor] {[#colorLiteral(red: 0.03529411765, green: 0.2980392157, blue: 0.5764705882, alpha: 1), #colorLiteral(red: 0.04705882353, green: 0.4509803922, blue: 0.6980392157, alpha: 1), #colorLiteral(red: 0.1098039216, green: 0.5882352941, blue: 0.7294117647, alpha: 1), #colorLiteral(red: 0.2352941176, green: 0.737254902, blue: 0.7803921569, alpha: 1), #colorLiteral(red: 0.9176470588, green: 0.8823529412, blue: 0.7843137255, alpha: 1), #colorLiteral(red: 0.8745098039, green: 0.7647058824, blue: 0.6156862745, alpha: 1)]}
+  static var yaleBlue: Color { Color(hex: "094C93") }
+  static var honoluluBlue: Color { Color(hex: "0C73B2") }
+  static var cyanCornflowerBlue: Color { Color(hex: "1C96BA") }
+  static var maximumBlueGreen: Color { Color(hex: "3CBCC7") }
+  static var pearl: Color { Color(hex: "EAE1C8") }
+  static var darkVanilla: Color { Color(hex: "DFC39D") }
 }
