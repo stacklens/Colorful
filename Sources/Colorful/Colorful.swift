@@ -103,4 +103,5 @@ public extension Color {
   static var lemonChiffon: Color { Color(hex: "FFF5CC") }
   static var navajoWhite: Color { Color(hex: "FFE0AB") }
   static var charmPink: Color { Color(hex: "EB8FA6") }
+  
 }
