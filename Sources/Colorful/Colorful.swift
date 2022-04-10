@@ -72,4 +72,11 @@ public extension Color {
   static var lightHotPink: Color { Color(hex: "F9AFEC") }
   static var pinkLace: Color { Color(hex: "FFD5FA") }
 
+  // MARK: - Lovely Summer
+  private var _LovelySummer: [UIColor] {[#colorLiteral(red: 0.4, green: 0.9215686275, blue: 0.4509803922, alpha: 1), #colorLiteral(red: 0.3921568627, green: 0.6117647059, blue: 0.8509803922, alpha: 1), #colorLiteral(red: 1, green: 0.9294117647, blue: 0.6196078431, alpha: 1), #colorLiteral(red: 0.9490196078, green: 0.6745098039, blue: 0.2588235294, alpha: 1), #colorLiteral(red: 0.8823529412, green: 0.3764705882, blue: 0.4431372549, alpha: 1)]}
+  static var veryLightMalachiteGreen: Color { Color(hex: "66EB73") }
+  static var littleBoyBlue: Color { Color(hex: "649CD9") }
+  static var pastelYellow: Color { Color(hex: "FFED9E") }
+  static var yellowOrange: Color { Color(hex: "F2AC42") }
+  static var lightCarminePink: Color { Color(hex: "E16071") }
 }
