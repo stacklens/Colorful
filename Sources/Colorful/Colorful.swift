@@ -1,9 +1,8 @@
 //
-//  Ext+UIColor.swift
-//  Moment
+//  Colorful swift package.
 //
-//  Created by 杜赛 on 2020/9/11.
-//  Copyright © 2020 Du Sai. All rights reserved.
+//  Created by 杜赛 on 2022/4/10.
+//  Copyright © 2022 Du Sai. All rights reserved.
 //
 
 import SwiftUI
@@ -88,4 +87,20 @@ public extension Color {
   static var maximumBlueGreen: Color { Color(hex: "3CBCC7") }
   static var pearl: Color { Color(hex: "EAE1C8") }
   static var darkVanilla: Color { Color(hex: "DFC39D") }
+  
+  // MARK: - Ramadan Month
+  private var _RamadanMonth: [UIColor] {[#colorLiteral(red: 0.7215686275, green: 0.5254901961, blue: 0.0431372549, alpha: 1), #colorLiteral(red: 1, green: 0.8431372549, blue: 0, alpha: 1), #colorLiteral(red: 0.003921568627, green: 0.5647058824, blue: 0, alpha: 1), #colorLiteral(red: 0.1647058824, green: 0.6862745098, blue: 0.1764705882, alpha: 1), #colorLiteral(red: 0.5058823529, green: 0.9333333333, blue: 0.5882352941, alpha: 1)]}
+  static var darkGoldenrod: Color { Color(hex: "B8860B") }
+  static var webGold: Color { Color(hex: "FFD700") }
+  static var islamicGreen: Color { Color(hex: "019000") }
+  static var wageningenGreen: Color { Color(hex: "2AAF2D") }
+  static var lightGreen: Color { Color(hex: "81EE96") }
+  
+  // MARK: - Pastel Wedding
+  private var _PastelWedding: [UIColor] {[#colorLiteral(red: 1, green: 0.737254902, blue: 0.6509803922, alpha: 1), #colorLiteral(red: 1, green: 0.6196078431, blue: 0.6196078431, alpha: 1), #colorLiteral(red: 1, green: 0.9607843137, blue: 0.8, alpha: 1), #colorLiteral(red: 1, green: 0.8784313725, blue: 0.6705882353, alpha: 1), #colorLiteral(red: 0.9215686275, green: 0.5607843137, blue: 0.6509803922, alpha: 1)]}
+  static var melon: Color { Color(hex: "FFBCA6") }
+  static var lightSalmonPink: Color { Color(hex: "FF9E9E") }
+  static var lemonChiffon: Color { Color(hex: "FFF5CC") }
+  static var navajoWhite: Color { Color(hex: "FFE0AB") }
+  static var charmPink: Color { Color(hex: "EB8FA6") }
 }
