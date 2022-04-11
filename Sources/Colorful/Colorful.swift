@@ -7,55 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
-public extension Color {
-  init(hex: UInt, alpha: Double = 1) {
-    self.init(
-      .sRGB,
-      red: Double((hex >> 16) & 0xff) / 255,
-      green: Double((hex >> 08) & 0xff) / 255,
-      blue: Double((hex >> 00) & 0xff) / 255,
-      opacity: alpha
-    )
-  }
-  
-  init(hex: String) {
-    let hex = hex
-      .trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
-      .replacingOccurrences(of: "#", with: "")
-    var int: UInt64 = 0
-    Scanner(string: hex).scanHexInt64(&int)
-    let a, r, g, b: UInt64
-    switch hex.count {
-      case 3: // RGB (12-bit)
-        (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
-      case 6: // RGB (24-bit)
-        (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-      case 8: // ARGB (32-bit)
-        (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
-      default:
-        (a, r, g, b) = (1, 1, 1, 0)
-    }
-    
-    self.init(
-      .sRGB,
-      red: Double(r) / 255,
-      green: Double(g) / 255,
-      blue:  Double(b) / 255,
-      opacity: Double(a) / 255
-    )
-  }
-  
-  
-  static func random() -> Color {
-    Color(UIColor(
-      red: .random(in: 0...1),
-      green: .random(in: 0...1),
-      blue: .random(in: 0...1),
-      alpha: 1.0))
-  }
-}
-
 
 @available(iOS 13.0, *)
 public extension Color {
@@ -112,4 +63,26 @@ public extension Color {
   static var ao: Color { Color(hex: "008018") }
   static var lgbtBlue: Color { Color(hex: "0000F9") }
   static var philippineViolet: Color { Color(hex: "86007D") }
+  
+  // MARK: - So Romantic
+  private var _soRomantic: [UIColor] {[#colorLiteral(red: 0.6392156863, green: 0.1098039216, blue: 0.3647058824, alpha: 1), #colorLiteral(red: 1, green: 0.6196078431, blue: 0.6196078431, alpha: 1), #colorLiteral(red: 1, green: 0.6196078431, blue: 0.6666666667, alpha: 1), #colorLiteral(red: 0.9843137255, green: 0.9960784314, blue: 0.8549019608, alpha: 1), #colorLiteral(red: 0.6705882353, green: 0.6117647059, blue: 0.8196078431, alpha: 1)]}
+  static var jazzberryJam: Color { Color(hex: "A31C5D") }
+  static var frenchPink: Color { Color(hex: "FF6E96") }
+  static var bakerMillerPink: Color { Color(hex: "FF9EAA") }
+  static var lightYellow: Color { Color(hex: "FBFEDA") }
+  static var lightPastelPurple: Color { Color(hex: "AB9CD1") }
+  
+  // MARK: - USA (United States Of America) Flag
+  private var _USAFlag: [UIColor] {[#colorLiteral(red: 0.2352941176, green: 0.231372549, blue: 0.431372549, alpha: 1), #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), #colorLiteral(red: 0.6980392157, green: 0.1333333333, blue: 0.2039215686, alpha: 1)]}
+  static var americanBlue: Color { Color(hex: "3C3B6E") }
+  static var americanWhite: Color { Color(hex: "FFFFFF") }
+  static var americanRed: Color { Color(hex: "B22234") }
+
+  // MARK: - Arabic Kuthu
+  private var _ArabicKuthu: [UIColor] {[#colorLiteral(red: 0.1411764706, green: 0.1254901961, blue: 0.05490196078, alpha: 1), #colorLiteral(red: 0.6666666667, green: 0.4901960784, blue: 0.2274509804, alpha: 1), #colorLiteral(red: 0.8235294118, green: 0.6823529412, blue: 0.3803921569, alpha: 1), #colorLiteral(red: 0.9882352941, green: 0.9098039216, blue: 0.6156862745, alpha: 1), #colorLiteral(red: 0.3058823529, green: 0.431372549, blue: 0.3254901961, alpha: 1)]}
+  static var blackChocolate: Color { Color(hex: "24200E") }
+  static var metallicSunburst: Color { Color(hex: "AA7D3A") }
+  static var earthYellow: Color { Color(hex: "D2AE61") }
+  static var flavescent: Color { Color(hex: "FCE89D") }
+  static var feldgrau: Color { Color(hex: "4E6E53") }
 }
