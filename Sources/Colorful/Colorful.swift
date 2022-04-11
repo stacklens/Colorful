@@ -104,4 +104,12 @@ public extension Color {
   static var navajoWhite: Color { Color(hex: "FFE0AB") }
   static var charmPink: Color { Color(hex: "EB8FA6") }
   
+  // MARK: - LGBT Flag
+  private var _LGBTFlag: [UIColor] {[#colorLiteral(red: 1, green: 0, blue: 0.09411764706, alpha: 1), #colorLiteral(red: 1, green: 0.6470588235, blue: 0.1725490196, alpha: 1), #colorLiteral(red: 1, green: 1, blue: 0.2549019608, alpha: 1), #colorLiteral(red: 0, green: 0.5019607843, blue: 0.09411764706, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 0.9764705882, alpha: 1), #colorLiteral(red: 0.5254901961, green: 0, blue: 0.4901960784, alpha: 1)]}
+  static var vividRed: Color { Color(hex: "FF0018") }
+  static var deepSaffron: Color { Color(hex: "FFA52C") }
+  static var maximumYellow: Color { Color(hex: "FFFF41") }
+  static var ao: Color { Color(hex: "008018") }
+  static var lgbtBlue: Color { Color(hex: "0000F9") }
+  static var philippineViolet: Color { Color(hex: "86007D") }
 }
