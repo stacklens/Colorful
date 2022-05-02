@@ -129,6 +129,15 @@ public extension Color {
   static var navajoWhite: Color { Color(hex: "FFE0AB") }
   static var charmPink: Color { Color(hex: "EB8FA6") }
   
+  // MARK: - Rainbow In The Window
+  private var _RainbowInTheWindow: [UIColor] {[#colorLiteral(red: 0.003921568627, green: 0.2549019608, blue: 0.9529411765, alpha: 1), #colorLiteral(red: 0, green: 0.8235294118, blue: 0.9176470588, alpha: 1), #colorLiteral(red: 0.007843137255, green: 0.9843137255, blue: 0.07450980392, alpha: 1), #colorLiteral(red: 0.9960784314, green: 0.9137254902, blue: 0.02745098039, alpha: 1), #colorLiteral(red: 0.937254902, green: 0.3882352941, blue: 0.01960784314, alpha: 1), #colorLiteral(red: 0.8862745098, green: 0.03137254902, blue: 0.02352941176, alpha: 1)]}
+  static var rYBBlue: Color { Color(hex: "0141F3") }
+  static var vividSkyBlue: Color { Color(hex: "00D2EA") }
+  static var electricGreen: Color { Color(hex: "02FB13") }
+  static var middleYellow: Color { Color(hex: "FEE907") }
+  static var spanishOrange: Color { Color(hex: "EF6305") }
+  static var electricRed: Color { Color(hex: "E20806") }
+
   // MARK: - Ramadan Month
   private var _RamadanMonth: [UIColor] {[#colorLiteral(red: 0.7215686275, green: 0.5254901961, blue: 0.0431372549, alpha: 1), #colorLiteral(red: 1, green: 0.8431372549, blue: 0, alpha: 1), #colorLiteral(red: 0.003921568627, green: 0.5647058824, blue: 0, alpha: 1), #colorLiteral(red: 0.1647058824, green: 0.6862745098, blue: 0.1764705882, alpha: 1), #colorLiteral(red: 0.5058823529, green: 0.9333333333, blue: 0.5882352941, alpha: 1)]}
   static var darkGoldenrod: Color { Color(hex: "B8860B") }
